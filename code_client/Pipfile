@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://test.pypi.org/simple/"
+verify_ssl = true
+name = "testpypi"
+
+[dev-packages]
+pandas = "*"
+pytest = "*"
+
+[requires]
+python_version = "3.8"
+
+[packages]
+tourism-api = {version = "*", index = "testpypi"}
+tourismapi = {path = "./../code_client/dist/tourismapi-0.0.1-py3-none-any.whl"}
+pandas = "*"
+gmplot = "*"
