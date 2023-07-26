@@ -115,7 +115,7 @@ class HotelManager:
         lat = 46.8
         lon = 8.3
 
-        apikey = "AIzaSyDyj9f9lYTrfwqrs0vdMNtmgCU2cnH9h4Y"
+        apikey = ""
         map_styles = [{"featureType": "poi", "stylers": [{"Visibility": "off"}]}]
         gmap = gmplot.GoogleMapPlotter(lat, lon,8, radius=40, scale_control=False, apikey=apikey, title="Hotels")
 
